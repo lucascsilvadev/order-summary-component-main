@@ -1,0 +1,13 @@
+#card {
+    height: 80%;
+    width: 85%;
+    background-color: var(--card-bg-color);
+    border-radius: 16px;
+    text-align: center;
+}
+
+#card__image {
+    width: 100%;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+}
