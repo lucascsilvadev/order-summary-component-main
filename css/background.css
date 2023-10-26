@@ -3,7 +3,7 @@
     width: 100vw;
     background-color: var(--bg-color);
     background-image: url('../images/pattern-background-mobile.svg');
-    background-size: auto;
+    background-size:contain;
     background-repeat: no-repeat;
     background-position: center;
     background-position: top;
