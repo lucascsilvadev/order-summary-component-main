@@ -1,4 +1,87 @@
-@import url('./reset.css');
-@import url('./variables.css');
-@import url('./background.css');
-@import url('./card.css');
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background {
+  height: 100vh;
+  width: 100vw;
+  background-color: hsl(225, 100%, 94%);
+  background-image: url("../images/pattern-background-mobile.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 85%;
+  background-color: #fff;
+  border-radius: 16px;
+  text-align: center;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+}
+.card__image {
+  width: 100%;
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+}
+
+.info {
+  padding: 0 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.info__title {
+  margin-top: 1em;
+}
+.info__text {
+  color: hsl(224, 23%, 55%);
+  font-size: 16px;
+  padding: 0 1em;
+  line-height: 1.7em;
+}
+.info__change {
+  align-self: center;
+  font-weight: 700;
+}
+.info__payment-button {
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  padding: 1em;
+  border-radius: 16px;
+  box-shadow: 0px 10px 60px -15px hsl(245, 75%, 52%);
+  margin-bottom: 0.5em;
+}
+.info__cancel {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 900;
+  color: hsl(224, 23%, 55%);
+  margin-bottom: 2em;
+}
+
+.plan {
+  margin: 0.5em 0;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 16px;
+  padding: 1em 0;
+  display: flex;
+  justify-content: space-around;
+}
+.plan__price {
+  color: hsl(224, 23%, 55%);
+}
+.plan__change {
+  align-self: center;
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=style.css.map */
