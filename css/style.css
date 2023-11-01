@@ -18,6 +18,11 @@
   justify-content: center;
   align-items: center;
 }
+@media (min-width: 1280px) {
+  .background {
+    background-image: url("../images/pattern-background-desktop.svg");
+  }
+}
 
 .card {
   width: 85%;
@@ -32,6 +37,21 @@
   border-top-right-radius: 16px;
   border-top-left-radius: 16px;
 }
+@media (min-width: 768px) and (orientation: portrait) {
+  .card {
+    width: 45%;
+  }
+}
+@media (min-width: 768px) and (orientation: landscape) {
+  .card {
+    width: 35%;
+  }
+}
+@media (min-width: 1280px) {
+  .card {
+    width: 28%;
+  }
+}
 
 .info {
   padding: 0 1em;
@@ -41,12 +61,19 @@
 }
 .info__title {
   margin-top: 1em;
+  font-weight: 900;
 }
 .info__text {
   color: hsl(224, 23%, 55%);
   font-size: 16px;
   padding: 0 1em;
   line-height: 1.7em;
+}
+@media (min-width: 1280px) {
+  .info__text {
+    padding: 0 1em;
+    line-height: 1.5em;
+  }
 }
 .info__change {
   align-self: center;
@@ -59,6 +86,10 @@
   border-radius: 16px;
   box-shadow: 0px 8px 45px -12px hsl(245, 75%, 52%);
   margin-bottom: 0.5em;
+  cursor: pointer;
+}
+.info__payment-button:active {
+  background-color: #766CF1;
 }
 .info__cancel {
   display: inline-block;
@@ -66,6 +97,15 @@
   font-weight: 900;
   color: hsl(224, 23%, 55%);
   margin-bottom: 2em;
+}
+.info__cancel a {
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+}
+@media (min-width: 1280px) {
+  .info {
+    padding: 0 1.5em;
+  }
 }
 
 .plan {
@@ -82,6 +122,10 @@
 .plan__change {
   align-self: center;
   font-weight: 700;
+}
+.plan__change:active {
+  color: #9B97E1;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */

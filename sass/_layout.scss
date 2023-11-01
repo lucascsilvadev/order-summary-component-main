@@ -11,4 +11,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @media (min-width: 1280px) {
+        background-image: url('../images/pattern-background-desktop.svg');
+    }
 }
