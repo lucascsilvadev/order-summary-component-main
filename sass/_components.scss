@@ -93,6 +93,11 @@
     padding: 1em 0;
     display: flex;
     justify-content: space-around;
+    strong {
+        color: black;
+        font-weight: 900;
+    }
+    
    
     &__price {
         color: core.$font-color;
@@ -107,9 +112,7 @@
         }  
     }
     &__info {
-        
-    }
-    &__icon {
-        
+        display: flex;
+        gap: 0.5em;
     }
 }

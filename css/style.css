@@ -110,11 +110,15 @@
 
 .plan {
   margin: 0.5em 0;
-  background-color: hsl(225, 100%, 98%);
+  background-color: #F8F9FE;
   border-radius: 16px;
   padding: 1em 0;
   display: flex;
   justify-content: space-around;
+}
+.plan strong {
+  color: black;
+  font-weight: 900;
 }
 .plan__price {
   color: hsl(224, 23%, 55%);
@@ -126,6 +130,10 @@
 .plan__change:active {
   color: #9B97E1;
   text-decoration: none;
+}
+.plan__info {
+  display: flex;
+  gap: 0.5em;
 }
 
 /*# sourceMappingURL=style.css.map */
